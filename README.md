@@ -21,7 +21,7 @@ Flags:
 example : 
 
 ```
-sortline -f file1.txt -s sorted
+sorter -f file1.txt -s sorted
 ```
 
 output :
