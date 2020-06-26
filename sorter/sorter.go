@@ -5,8 +5,10 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"path"
 	"path/filepath"
 	"sort"
+	"strings"
 )
 
 func Run(config *Config) error {
@@ -26,9 +28,8 @@ func Run(config *Config) error {
 }
 
 func addSuffix(name string, suffix string) string {
-	var extension = filepath.Ext(name)
-	var nameWithoutExtension = name[0 : len(name)-len(extension)]
-	return nameWithoutExtension + "-" + suffix + "." + extension
+	return fmt.Sprintf("%s-%s%s", strings.TrimSuffix(name, path.Ext(name)),
+		suffix, filepath.Ext(name))
 }
 
 func readLines(file string) (lines []string, err error) {
