@@ -7,6 +7,7 @@ Usage :
 sortline -h
 ```
 
+```
 Usage:
   sort [flags]
 
@@ -15,7 +16,7 @@ Flags:
   -h, --help                        help for sort
   -s, --sorted-file-suffix string   The output file name suffix (default "sorted")
   -v, --version                     Print the version and exit
-
+```
 
 example : 
 
