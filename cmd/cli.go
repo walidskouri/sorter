@@ -5,7 +5,7 @@ import (
 	"github.com/spf13/cobra"
 	"log"
 	"os"
-	"github.com/walidskouri/sortlines/sorter"
+	"github.com/walidskouri/sorter/sorter"
 )
 
 const version = "0.0.1"
@@ -23,7 +23,7 @@ var opts = &Options{
 
 func Run() {
 	cmd := &cobra.Command{}
-	cmd.Use = "sort"
+	cmd.Use = "sorter"
 	cmd.Short = "Sort the input file lines alphabetically"
 	cmd.Flags().StringVarP(&opts.fileName, "file-name", "f", opts.fileName, "The input file name")
 	cmd.Flags().StringVarP(&opts.suffix, "sorted-file-suffix", "s", opts.suffix, "The output file name suffix")

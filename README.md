@@ -4,7 +4,7 @@ Simple Go application to sort file lines alphabetically
 Usage :
 
 ```
-sortline -h
+sorter -h
 ```
 
 ```

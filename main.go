@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/walidskouri/sortlines/cmd"
+	"github.com/walidskouri/sorter/cmd"
 )
 
 func main() {
