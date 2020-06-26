@@ -23,13 +23,15 @@ var opts = &Options{
 
 func Run() {
 	cmd := &cobra.Command{}
-	cmd.Use = "sort file-name sorted-file-suffix"
+	cmd.Use = "sort"
 	cmd.Short = "Sort the input file lines alphabetically"
 	cmd.Flags().StringVarP(&opts.fileName, "file-name", "f", opts.fileName, "The input file name")
 	cmd.Flags().StringVarP(&opts.suffix, "sorted-file-suffix", "s", opts.suffix, "The output file name suffix")
 	cmd.Flags().BoolVarP(&opts.version, "version", "v", opts.version, "Print the version and exit")
 
 	cmd.RunE = func(cmd *cobra.Command, args []string) error {
+
+
 		if opts.version {
 			fmt.Printf("sorter version %s\n", version)
 			return nil
