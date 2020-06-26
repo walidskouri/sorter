@@ -1,7 +1,7 @@
 package main
 
 import (
-	"training.go/sortlines/cmd"
+	"github.com/walidskouri/sortlines/cmd"
 )
 
 func main() {

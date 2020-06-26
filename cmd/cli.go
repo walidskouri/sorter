@@ -5,7 +5,7 @@ import (
 	"github.com/spf13/cobra"
 	"log"
 	"os"
-	"training.go/sortlines/sorter"
+	"github.com/walidskouri/sortlines/sorter"
 )
 
 const version = "0.0.1"
